@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+	body{margin: 0 auto;
+	width: 960px;
+	}
+	
+		.mbl-upper-menu {
+				background: -webkit-gradient( radial, 50% 63%, 0, 50% 58%, 190, from(#4e525e), to(#3b3e45) ) #3b3f4b;
+				height:100px;
+				overflow: hidden;
+
+		}
+		#menu-on{
+				height: 0;
+				-webkit-transition: all .5s ease;
+		}
+		
+		
+		#menu-on:target {
+			height: 100px;
+		}
+		
+		#menu-off:target {
+			height: 0px;
+		}
+			#menu-off:target .mbl-close {
+				color: #300;
+				opacity: 0;
+				top: -30px;
+			}
+		
+		.mbl-upper-menu-button{
+			border-left: 1px solid #42444f;
+			border-right: 1px solid #686b73;
+			color: #fff;
+			font-weight: bold;
+			float: left;
+			height: 58px;
+			margin: 13px 0px;
+			padding:6px 1px;
+			width: 109px;
+			text-align: center;	
+			position: relative;
+			float: left;
+		}
+		
+		.mbl-upper-menu-button:first-child{
+			border-left: 0;
+			width:110px;
+			margin-left: 10px;
+		}
+		.mbl-upper-menu-button:first-child:hover{
+			border-left: 0;
+			width:109px;
+			margin-left: 10px;
+		}
+		
+		div.mbl-upper-menu-button:last-of-type{
+			border-right: 0;
+			width:110px;
+		}
+		
+		.mbl-upper-menu-button:hover {
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#808591), color-stop(5%,#818492), color-stop(9%,#7d838e), color-stop(11%,#7f8390), color-stop(14%,#7a828c), color-stop(20%,#7c7f8d), color-stop(22%,#777f89), color-stop(27%,#797d8b), color-stop(28%,#747d86), color-stop(35%,#777a88), color-stop(39%,#727a84), color-stop(49%,#777c88), color-stop(50%,#5a5e6c), color-stop(76%,#616473), color-stop(100%,#5f6271)); 
+		border: 1px solid #000;
+		box-shadow: inset 0 0 2px #fff;
+		width: 109px;
+		border-radius: 4px;
+		padding: 13px 1px 0px 2px;
+		height: 73px;
+		margin-left: -1px;
+		margin-top: 5px;
+		}
+
+
+		
+		.mbl-main-bar {
+		 background: -webkit-gradient(linear, left top, left bottom, from(#787e8c), to(#5f646e));
+			border-top: 1px solid #aaaeb9;
+			border-bottom: 1px solid #37393f;
+		 height: 54px;
+		 box-shadow: 0 0 10px #333; 
+		 border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		}
+		
+		.mbl-logo {
+			font-family: Sans-serif;
+			color: #b3d72d;
+			font-weight: bold;
+			font-size: 2em;
+			letter-spacing: -0.1em;
+			padding: 7px;
+			text-shadow: -1px 1px 2px #000;
+			border-right: 1px solid #878c96;
+			height: 40px;
+			width: 78.8%;
+			float: left;
+		}
+		
+			a.mbl-menu-switch {
+			background: -webkit-gradient(linear, left top, left bottom, from(#686e7c), to(#555864));
+			display: block;
+			font-family: Sans-serif;
+			color: #fff;
+			font-weight: bold;
+			font-size: 2em;
+			padding: 7px;
+			text-shadow: -1px 1px 2px #000;
+			border-left: 1px solid #454853;
+			border-bottom-right-radius: 5px;
+			height: 40px;
+			width: 18%;
+			float: left;
+			text-align: center;
+			text-decoration: none;
+		}
+		a.mbl-close{
+-webkit-border-bottom-right-radius: 4px;
+-webkit-border-bottom-left-radius: 4px;
+-moz-border-radius-bottomright: 4px;
+-moz-border-radius-bottomleft: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px;
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 50%;
+		color: white;
+		font-family: tahoma;
+		text-decoration: none;
+		width: 115px;
+		height: 20px;
+		background: rgba(0, 0, 0, 0.5);
+		font-weight: bold;
+		-webkit-transition: all .2s ease;
+		overflow: hidden;
+		text-align: center;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		border-top: none;
+		padding-top:2px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+		}
+		
+		.lipsum{
+		padding: 2.5em;
+		-moz-column-width: 20em; -webkit-column-width: 20em; -moz-column-gap: 1em; -webkit-column-gap: 1em;
+		color: #777;
+		}
+	</style>
+</head>
+<body>
+	<div class="mbl-upper-menu" id="menu-on">
+	<div id="menu-off">
+		<div class="mbl-upper-menu-button">1<p>One</p></div>
+		<div class="mbl-upper-menu-button">2<p>Two</p></div>
+		<div class="mbl-upper-menu-button">3<p>Three</p></div>
+		<div class="mbl-upper-menu-button">4<p>Four</p></div>
+		<a class="mbl-close" href="#menu-off">^</a>
+	</div>
+	</div>
+	
+	<div class="mbl-main-bar">
+		<div class="mbl-logo">Lorem Ipsum</div>
+		<a class="mbl-menu-switch" href="#menu-on">Menu</a>
+	</div>
+	
+	<div class="lipsum">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae interdum risus. Nunc luctus placerat quam eu volutpat. Cras accumsan auctor consequat. Sed vel sem et mauris aliquet suscipit. Cras erat enim, rhoncus eu feugiat non, fermentum et lorem. Proin eleifend, libero in viverra lacinia, orci eros fringilla lacus, sit amet rhoncus ipsum arcu eu augue. Quisque massa ante, blandit sed lacinia ac, dignissim vitae quam. Praesent sem tortor, accumsan et scelerisque at, pretium gravida leo. Praesent lacinia ornare lobortis. Fusce at nulla metus, vel fringilla quam. Cras ut sagittis ligula. Nulla facilisi. Curabitur odio lectus, placerat id condimentum feugiat, sagittis at nunc. Praesent ac lacinia massa. Pellentesque sodales pharetra tellus eu semper. Donec sit amet metus nisi. Sed quam nulla, lacinia scelerisque iaculis quis, posuere euismod nisi. Duis consequat gravida eros, pellentesque feugiat velit facilisis non.
+
+Vivamus et leo neque. Nam ut ante elit. Nam dolor magna, posuere ac blandit vitae, aliquet ac nibh. Pellentesque et nisl sed tellus vulputate faucibus. Nulla eu congue elit. Morbi ultricies est id est convallis euismod. Nam in elit ut urna convallis vestibulum. Curabitur venenatis porta ultrices. Nam dignissim orci sit amet est elementum pretium. Etiam dignissim faucibus sem, non lacinia eros elementum ut. Proin sed odio vel libero consequat pulvinar.
+
+Nam iaculis ipsum nec nisl mollis fringilla. Nam sem quam, malesuada at rutrum quis, molestie luctus mi. Maecenas posuere ante fermentum diam laoreet semper nec eu eros. Suspendisse potenti. Nulla facilisi. Nunc bibendum gravida tortor, non vehicula nulla aliquet id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla vestibulum, arcu at mattis sodales, lectus erat ornare turpis, at iaculis neque ante at purus. Proin aliquam dolor et massa volutpat et pharetra nulla gravida. In egestas odio sit amet quam dignissim hendrerit. Maecenas et tellus vitae diam feugiat consequat eget eget dui. Morbi id elit et sem pretium pellentesque. Vivamus vitae nunc neque. Nulla pharetra semper magna a tristique. Ut varius massa arcu. Nulla rutrum neque sed enim mattis ac gravida felis iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a massa dignissim lectus adipiscing vulputate eu ac eros. Nam ullamcorper posuere lorem ac mollis. Pellentesque volutpat, dolor posuere mollis rhoncus, leo ante lacinia ipsum, ut laoreet odio nisi quis est.
+
+Vivamus in purus felis. Donec velit mi, gravida sed consectetur quis, iaculis et mi. In rhoncus ullamcorper massa feugiat vulputate. Ut quis nulla elit. Nam vitae scelerisque justo. Donec ultrices ante sed ligula gravida id blandit velit accumsan. Sed pellentesque aliquam ornare. Quisque vel justo libero. Curabitur nec ipsum sit amet enim sollicitudin hendrerit vitae adipiscing lacus. Nunc euismod mauris at libero tincidunt sit amet aliquam ipsum fringilla. Pellentesque dictum ornare nisi ac tempor. Nam suscipit, orci at sollicitudin pretium, est turpis ullamcorper nunc, et pharetra purus dolor dictum sem. Vestibulum eros massa, aliquet quis mattis non, fermentum vel turpis. Morbi consectetur imperdiet sapien. Proin congue nisi ut turpis faucibus pellentesque. Quisque sed velit mollis felis placerat sodales in in enim. Ut adipiscing mauris a leo consectetur nec vehicula nunc porta.
+
+Nullam tincidunt sollicitudin neque. Donec sit amet urna vitae lorem sagittis tempus. Aliquam quam sem, facilisis sit amet scelerisque at, condimentum at tortor. Quisque in neque quis nibh cursus rutrum vitae lacinia ante. Etiam ut dui lacus, ac hendrerit dolor. Praesent feugiat vestibulum dictum. Etiam consectetur magna at nunc vestibulum feugiat. Suspendisse potenti. Mauris ipsum libero, egestas sit amet posuere quis, dignissim sagittis nulla. Praesent rutrum purus vitae elit adipiscing ornare. Pellentesque ac velit urna, ornare facilisis purus. Curabitur nec dolor libero. Pellentesque at varius eros. Nunc pretium semper orci sed consequat. Aliquam nec suscipit arcu. Maecenas feugiat erat eu enim varius convallis.
+
+Sed vel urna vitae orci malesuada ultrices sit amet in quam. Sed ac dictum sapien. Fusce egestas, velit sed porttitor semper, ligula libero cursus massa, fringilla convallis massa leo id diam. Aliquam erat volutpat. Integer vitae mollis lorem. Duis suscipit magna nec mi porttitor et pulvinar quam accumsan. Nulla eros justo, luctus at commodo ac, sodales eget mauris. Ut gravida blandit lectus, quis cursus ligula ultrices sit amet. Fusce placerat risus nisl. Aliquam consequat sollicitudin nisl, sit amet pulvinar lorem porttitor et. Nullam congue ultricies ante nec molestie. Quisque feugiat rutrum tincidunt. Aliquam adipiscing semper venenatis. Quisque tristique orci sit amet lectus euismod ac dapibus dui rutrum. Etiam vel risus eros. Nullam ut magna in nulla congue mattis tempor a ligula. Fusce tempus iaculis pretium. Fusce laoreet lobortis aliquam. Aenean eu dolor mi, quis accumsan mi. Suspendisse molestie sodales tellus eu elementum.
+
+Duis euismod posuere metus, sed fermentum lacus malesuada ac. Morbi velit risus, pulvinar vitae tincidunt at, gravida ac eros. Ut non molestie metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc sed dolor augue. Sed at nisi et est malesuada fermentum. Phasellus sit amet nunc quam. In sed eros mi. In luctus nibh eget nibh fringilla sit amet bibendum tortor sodales. Integer dolor massa, rutrum vitae commodo ac, tempor et augue. Nullam nec ligula eros, nec facilisis metus. Mauris aliquam pretium ultrices. Nulla facilisi. Morbi a turpis quam, vel tristique mauris. Aenean nulla urna, commodo in vestibulum ut, tristique a lacus. Duis blandit fermentum felis, nec ultricies ipsum tempus id. Ut placerat purus sit amet tellus blandit tempus. Duis nec quam turpis. In ullamcorper augue vel nulla lobortis pretium.
+
+Proin eu nulla in nunc ultrices rhoncus. Nulla dictum ultricies consequat. Sed a lectus dolor. Integer convallis est non nisl sodales posuere. Quisque rhoncus scelerisque faucibus. Aliquam luctus metus non nulla mattis pretium. Integer dictum egestas purus, non lobortis urna vestibulum vitae. Maecenas accumsan sagittis tortor sed sodales. Fusce blandit elit in risus varius porttitor. Nullam lacus urna, sodales sit amet egestas sed, aliquet et ipsum. Sed lacinia enim id orci auctor eu gravida risus fringilla. Praesent orci metus, tempus ut semper ut, tincidunt nec nulla. Suspendisse et lacus purus, sit amet consectetur risus. Suspendisse posuere ipsum eu turpis iaculis ultrices. Morbi at lorem justo, et vestibulum libero. Ut varius lacus ac ipsum tincidunt eu fermentum ipsum tincidunt.
+
+Cras porta lorem in mi posuere ut tristique diam iaculis. Suspendisse ultrices fringilla purus id consequat. Vivamus fermentum ultricies mauris in bibendum. In sem nisi, posuere eget semper at, mollis vel sem. Aliquam placerat ipsum nec orci elementum eget commodo turpis hendrerit. Sed id massa at urna varius faucibus. Praesent vel consectetur tellus. Maecenas pharetra placerat diam et laoreet. Mauris vel eros porta felis consequat semper vitae sit amet magna. Integer sem augue, pharetra a tempus nec, dictum ut enim. Duis ultrices condimentum congue. Quisque in velit id dui laoreet vehicula sit amet et odio. Mauris fringilla, diam non ultricies gravida, sem arcu pellentesque enim, et gravida enim massa sit amet enim. Proin sed nulla ut tellus tempus facilisis. Nulla lacus sapien, mollis id pellentesque id, fermentum quis ipsum. Curabitur vulputate tortor aliquam lectus facilisis tincidunt cursus risus ullamcorper. Duis viverra ornare dolor. Aliquam vel tortor massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+Sed ligula tellus, sodales eget facilisis nec, imperdiet eu lectus. Nullam consequat purus ut mauris cursus pretium. Nunc vestibulum fringilla nisi, a posuere mauris vulputate quis. Proin placerat dapibus tortor eu consequat. Aliquam eget molestie augue. Morbi semper iaculis dictum. Maecenas egestas dignissim orci eu luctus. In suscipit sem eget sapien adipiscing sodales. In dapibus porta neque, quis consectetur felis vulputate egestas. In sed sem quis lorem tincidunt posuere. Nulla at tellus odio, a bibendum justo. Nulla sagittis mi at risus feugiat et consectetur nulla dapibus. Quisque nec hendrerit nibh. Quisque sem nunc, sagittis sit amet placerat vestibulum, fringilla quis justo. Pellentesque quam nisl, commodo vitae pulvinar non, aliquet vel mauris. Cras libero urna, sodales consectetur ultrices vel, sodales non augue. Etiam aliquet est eget magna iaculis quis ornare quam suscipit. Curabitur ac libero felis. Quisque aliquet, libero eu venenatis dapibus, nibh tortor consequat dui, nec tristique metus dolor ac ante. In rutrum laoreet suscipit.
+	
+	</div>
+	
+</body>
+</html>
